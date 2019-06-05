@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Shades of Green Guesthouse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">guesthouse</a></li> |
+				<li class="active"><a href="rooms.html">rooms & rates</a></li> |
+				<li><a href="reservations.html">reservations</a></li> |
+				<li><a href="activities.html">activities</a></li> |
+				<li><a href="contacts.html">contacts</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<!-- <form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+								<select class="custom-select" id="select-1">
+									<option selected="selected">EN</option>
+									<option>USA</option>
+									<option>AUS</option>
+									<option>UK</option>
+									<option>IND</option>
+								</select>
+							</div>		
+						</div>		
+					</form> -->
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">guesthouse</a></li> 
+				<li><a href="rooms.html">rooms & rates</a></li> 
+				<li><a href="reservations.html">reservations</a></li> 
+				<li><a href="activities.html">activities</a></li> 
+				<li><a href="contacts.html">contacts</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="content">
+			<div class="room">
+				<h4>Shades of Green Guest house - a "home away from home" experience</h4>
+				<p class="para">A cozy house nestled beneath the luscious green leaves of Greenside, Johannesburg. The home provides accommodation that is suitable for visitors on business, families enjoying a vacation and boasts as one of only a very few that specially caters to those in recovery after a hospital stay. <br>At maximum capacity, the guest house is able to comfortably cater for 14 guests through their 6 units or apartments available.<br>
+<br>As part of their offerings, guests will find a qualified Reflexology and Beauty therapist in-house as well a restaurant that caters to any appetite, meal preference or taste adventure that a curious foodie may be after.<br>
+<br>Should you have to go exploring outside the secure premises of the house - (but not really want to leave the warmth of the guest house's hospitality)... No stress, the Shades of Green shuttle service will take you to where you need to be and be there anxiously waiting when you are ready to return.<br>
+<br>These are just some of the reasons why, should you ever be in our neck of the concrete jungle - Greenside, Johannesburg... be sure to look us up! We promise to show you that there is really no place like home... OUR HOME, that is!!!</p>
+			</div>
+				<div id="pricing-table" class="clear">
+    <div class="plan">
+        <h3>2 SLEEPER APARTMENT<span>R500</span></h3>
+        <a class="signup" href="">Sign up</a>        
+        <ul>
+             <li>Sleeps 2</li>
+   	<li>Large bedroom</li>
+    <li>Double bed</li>
+    <li>En-suite bathrom</li>
+    <li>Shower only</li>
+    <li>Kitchenette</li>
+	<li>Afro-centric decor</li>			
+        </ul>    
+    </div>
+    <div class="plan">
+        <h3>4 SLEEPER APARTMENT<span>R800</span></h3>
+		<a class="signup" href="">Sign up</a>
+        <ul>
+            <li>Sleeps 4</li>
+    <li>Large bedroom</li>
+    <li>Double bed</li>
+	<li>Sleeper couch</li>
+    <li>Shared Bathroom</li>
+    <li>Kitchen (full size)</li>
+	<li>Lounge area</li>			
+        </ul>
+    </div>
+    <div class="plan">
+        <h3>6 SLEEPER APARTMENT<span>R1200</span></h3>
+        <a class="signup" href="">Sign up</a>		
+        <ul>
+            <li>Sleeps 6</li>
+    <li>Two bedrooms</li>
+	<li>En-suite bathrooms</li>
+    <li>Two double beds</li>
+	<li>Sleeper couch</li>
+    <li>Full fitted kitchen</li>
+	<li>Lounge & Dining area</li>			
+        </ul>
+    </div> 	
+</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+		<div class="sidebar">
+			 <div class="date_btn">
+				<form>
+					<input type="submit" value="book now" style="width: 82px;">
+				</form>
+			</div>
+			<h4><u>Room Facilities</u></h4>
+			<ul class="s_nav">
+			<li>Satellite TV</li>
+			<li>WIFI</li>
+			<li>Security Safe</li>
+			<li>Tea and Coffee</li>
+			<li>Linen and Towels</li>
+			<li>Non Smoking</li>
+			<li>Microwave Oven</li></ul>
+			<br>
+			<h4><u>On Site Facilities</u></h4>
+			<br>
+			<ul class="s_nav1">
+				<li><img src="images/icon_01.png" alt=""/></li>
+				<li><img src="images/icon_02.png" alt=""/></li>
+				<li><img src="images/icon_03.png" alt=""/></li>
+				<li><img src="images/icon_04.png" alt=""/></li>
+				<li><img src="images/icon_05.png" alt=""/></li>
+				<li><img src="images/icon_06.png" alt=""/></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>2017©<a href="http://shadesofgreen.ga/"> shadesofgreen.ga</a> | Designed by&nbsp;<a href="http://thatsit.ml/"> Thats I.T</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">guesthouse</a></li>
+					<li><a href="rooms.html">rooms & rates</a></li>
+					<li><a href="reservations.html">reservations</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="https://www.facebook.com/352048451861386/"></a></li>
+					<li><a class="icon2" href="https://twitter.com/ShadesofGreenGA"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

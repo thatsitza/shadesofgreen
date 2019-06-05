@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Shades of Green Guesthouse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">guesthouse</a></li> |
+				<li><a href="rooms.html">rooms & rates</a></li> |
+				<li><a href="reservations.html">reservations</a></li> |
+				<li><a href="activities.html">activities</a></li> |
+				<li class="active"><a href="contacts.html">contacts</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<!-- <form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+								<select class="custom-select" id="select-1">
+									<option selected="selected">EN</option>
+									<option>USA</option>
+									<option>AUS</option>
+									<option>UK</option>
+									<option>IND</option>
+								</select>
+							</div>		
+						</div>		
+					</form> -->
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">guesthouse</a></li> 
+				<li><a href="rooms.html">rooms & rates</a></li> 
+				<li><a href="reservations.html">reservations</a></li> 
+				<li><a href="activities.html">activities</a></li> 
+				<li><a href="contacts.html">contacts</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="contact">				
+				<div class="contact_left">
+					<div class="contact_info">
+			    	 	<h3>Find Us Here</h3>
+			    	 		<div class="map">
+					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57304.703490179636!2d27.94675253590535!3d-26.146408144552037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b7ff2f0dfa1%3A0xc63b643d4d5c09b7!2s69+Greenhill+Rd%2C+Greenside%2C+Randburg%2C+2034!5e0!3m2!1sen!2sza!4v1491834907848" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					   		</div>
+      				</div>
+      			<div class="company_address">
+				     	<h3>Company Information :</h3>
+						<p>69 Greenhill Road</p>
+						<p>Greenside, Johannesburg</p>
+						<p>South Africa, 2193</p>
+				   		<p>Phone:(+27)11 646 5033</p>
+				   		<p>Cell: (+27)82 900 5761</p>
+				 	 	<p>Email: <a href="">shadesofgreen@live.co.za</a></p>
+				   		<p>Follow us on: <a href="https://www.facebook.com/352048451861386/">Facebook</a>, <a href="https://www.twitter.com/shadesofgreenga/">Twitter</a></p>
+				   </div>
+				</div>				
+				<div class="contact_right">
+				  <div class="contact-form">
+				  	<h3>Reach Us</h3>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span><label>NAME</label></span>
+						    	<span><input name="userName" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>MOBILE</label></span>
+						    	<span><input name="userPhone" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>SUBJECT</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="submit to us"></span>
+						  </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clear"></div>		
+		  </div>
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>2017©<a href="http://shadesofgreen.ga/"> shadesofgreen.ga</a> | Designed by&nbsp;<a href="http://thatsit.ml/"> Thats I.T</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">guesthouse</a></li>
+					<li><a href="rooms.html">rooms & rates</a></li>
+					<li><a href="reservations.html">reservations</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="https://www.facebook.com/352048451861386/"></a></li>
+					<li><a class="icon2" href="https://twitter.com/ShadesofGreenGA/"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

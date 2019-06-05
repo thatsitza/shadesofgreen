@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Shades of Green Guesthouse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">guesthouse</a></li> |
+				<li><a href="rooms.html">rooms & rates</a></li> |
+				<li><a href="reservations.html">reservations</a></li> |
+				<li class="active"><a href="activities.html">activities</a></li> |
+				<li><a href="contacts.html">contacts</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<!-- <form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+								<select class="custom-select" id="select-1">
+									<option selected="selected">EN</option>
+									<option>USA</option>
+									<option>AUS</option>
+									<option>UK</option>
+									<option>IND</option>
+								</select>
+							</div>		
+						</div>		
+					</form> -->
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">guesthouse</a></li> 
+				<li><a href="rooms.html">rooms & rates</a></li> 
+				<li><a href="reservations.html">reservations</a></li> 
+				<li><a href="activities.html">activities</a></li> 
+				<li><a href="contacts.html">contacts</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+<!-- start main_content -->
+				<ul class="service_list">
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-zoo-lake">
+								<img src="images/zoo_lake.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>	
+						<a href="http://www.southafrica.net/za/en/articles/entry/article-zoo-lake"><h3>Zoo Lake</h3></a>
+						<p class="para">Corner of Jan Smuts Avenue and West World Street, Parkview
+Telephone: (011) 483-1017</p>
+						<h4><a  href="http://www.jhbcityparks.com/index.php/list-of-parks-mainmenu-39/53-zoo-lake">1.2km - <u>Visit Website</u></a></h4>
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-emmarentia-dam">
+								<img src="images/emmarentia_dam_1.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>	
+						<a href="http://www.southafrica.net/za/en/articles/entry/article-emmarentia-dam"><h3>Emmarentia Dam</h3></a>
+						 <p class="para">Main entrance on Olifants Road, Greenside, Johannesburg Telephone: +27 (0)11 712 6600</p>
+						 <h4><a href="http://www.southafrica.net/za/en/articles/entry/article-emmarentia-dam">2.3km - <u>Visit Website</u></a></h4>
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-the-johannesburg-zoo">
+								<img src="images/johannesburg_zoo.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>						
+						 <a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-the-johannesburg-zoo"><h3>The Johannesburg Zoo</h3></a>
+						 <p class="para">Corner of Jan Smuts Avenue and Upper Park Drive, Parkview Telephone: +27 (0)11 646 2000</p>
+						 <h4><a href="http://www.jhbzoo.org.za/">2.9km - <u>Visit Website</u></a></h4>
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-johannesburg-botanical-gardens">
+								<img src="images/johannesburg_botanical_gardens.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>						
+						<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-johannesburg-botanical-gardens"><h3>The Botanical Gardens</h3></a>
+						 <p class="para">Main entrance on Olifants Road, Greenside, Johannesburg Telephone: +27 (0)11 712 6600</p>
+						 <h4><a href="http://www.jhbcityparks.com/index.php/conservation-contents-95/botanical-gardens-contents-96">2km - <u>Visit Website</u></a></h4>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<ul class="service_list top">
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-gold-reef-city">
+								<img src="images/gold_reef_theme_park.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>						
+						 <a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-gold-reef-city"><h3>Gold Reef City Theme Park</h3></a>
+						 <p class="para">Corner of Northern Park Way and Data Crescent, Ormonde Telephone: +27 (0)11 248 6800</p>
+						<h4><a  href="https://www.tsogosun.com/gold-reef-city-casino/theme-park">12.2km - <u>Visit Website</u></a></h4>
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-gold-reef-city-casino">
+								<img src="images/gold_reef_casino.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>						
+						 <a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-gold-reef-city-casino"><h3>Gold Reef City Casino</h3></a>
+						 <p class="para">Main entrance on Northern Park Way, Ormonde, Johannesburg Telephone: +27 (0)11 248 5000</p>
+						 <h4><a href="https://www.tsogosun.com/gold-reef-city-casino">11.8km - <u>Visit Website</u></a></h4>
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-the-apartheid-museum-johannesburg">
+								<img src="images/apartheid_museum.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>	
+						 <a href="http://www.southafrica.net/za/en/articles/entry/article-the-apartheid-museum-johannesburg"><h3>The Apartheid Museum</h3></a>
+						<p class="para">Corner of Northern Park Way and Gold Reef Road, Ormonde Telephone:  +27 (0)11 309 4700</p>
+						<h4><a href="https://www.apartheidmuseum.org/">12.3km - <u>Visit Website</u></a></h4>
+											
+					</li>
+					<li>
+						<div class="ser_img">
+							<a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-planetariums">
+								<img src="images/planet.jpg" alt="" />
+								<span class="next"> </span>
+							</a>
+						</div>		
+						 <a href="http://www.southafrica.net/za/en/articles/entry/article-southafrica.net-planetariums"><h3>Johannesburg Planetarium</h3></a>
+						 <p class="para">University of the Witwatersrand, Yale Road, Johannesburg Telephone:  +27 (0)11 717 1392</p>
+						<h4><a  href="http://www.planetarium.co.za/">4.5km - <u>Visit Website</u></a></h4>
+					</li>
+					<div class="clear"></div>
+				</ul>
+		<div class="clear"></div>
+	<!-- end main_content -->
+
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>2017©<a href="http://shadesofgreen.ga/"> shadesofgreen.ga</a> | Designed by&nbsp;<a href="http://thatsit.ml/"> Thats I.T</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">guesthouse</a></li>
+					<li><a href="rooms.html">rooms & rates</a></li>
+					<li><a href="reservations.html">reservations</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="https://www.facebook.com/352048451861386/"></a></li>
+					<li><a class="icon2" href="https://twitter.com/ShadesofGreenGA"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>
